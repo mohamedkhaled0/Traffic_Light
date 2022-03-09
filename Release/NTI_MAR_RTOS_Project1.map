@@ -1,0 +1,490 @@
+Archive member included because of file (symbol)
+
+d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./main.o (__do_copy_data)
+d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./RTOS_Stack/RTOS_Program.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+TIMER0_CallBack     0x2               ./MCAL/TIMER/TIMER_Program.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./RTOS_Stack/RTOS_Program.o
+LOAD ./MCAL/TIMER/TIMER_Program.o
+LOAD ./MCAL/MGIE/MGIE_Program.o
+LOAD ./MCAL/MDIO/MDIO_Program.o
+LOAD ./HAL/HLED/HLED_Program.o
+LOAD ./main.o
+LOAD d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x7c6
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./RTOS_Stack/RTOS_Program.o
+ .text          0x00000092        0x0 ./MCAL/TIMER/TIMER_Program.o
+ .text          0x00000092        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .text          0x00000092        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .text          0x00000092        0x0 ./HAL/HLED/HLED_Program.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.RTOS_VidCreateTask
+                0x00000092       0x4c ./RTOS_Stack/RTOS_Program.o
+                0x00000092                RTOS_VidCreateTask
+ .text.RTOS_VidScheduler
+                0x000000de       0xbe ./RTOS_Stack/RTOS_Program.o
+                0x000000de                RTOS_VidScheduler
+ .text.RTOS_VidDeleteTask
+                0x0000019c       0x1e ./RTOS_Stack/RTOS_Program.o
+                0x0000019c                RTOS_VidDeleteTask
+ .text.RTOS_VidSuspendTask
+                0x000001ba       0x1c ./RTOS_Stack/RTOS_Program.o
+                0x000001ba                RTOS_VidSuspendTask
+ .text.RTOS_VidResumeTask
+                0x000001d6       0x1e ./RTOS_Stack/RTOS_Program.o
+                0x000001d6                RTOS_VidResumeTask
+ .text.RTOS_VidInit
+                0x000001f4       0x18 ./RTOS_Stack/RTOS_Program.o
+                0x000001f4                RTOS_VidInit
+ .text.TIMER0_VidInit
+                0x0000020c       0x2c ./MCAL/TIMER/TIMER_Program.o
+                0x0000020c                TIMER0_VidInit
+ .text.TIMER0_VidSetPreload
+                0x00000238        0x4 ./MCAL/TIMER/TIMER_Program.o
+                0x00000238                TIMER0_VidSetPreload
+ .text.TIMER0_VidSetCTCValue
+                0x0000023c        0x4 ./MCAL/TIMER/TIMER_Program.o
+                0x0000023c                TIMER0_VidSetCTCValue
+ .text.TIMER0_VidOVF_SetCallBack
+                0x00000240        0xa ./MCAL/TIMER/TIMER_Program.o
+                0x00000240                TIMER0_VidOVF_SetCallBack
+ .text.TIMER0_VidCTC_SetCallBack
+                0x0000024a        0xa ./MCAL/TIMER/TIMER_Program.o
+                0x0000024a                TIMER0_VidCTC_SetCallBack
+ .text.__vector_11
+                0x00000254       0x4e ./MCAL/TIMER/TIMER_Program.o
+                0x00000254                __vector_11
+ .text.__vector_10
+                0x000002a2       0x4e ./MCAL/TIMER/TIMER_Program.o
+                0x000002a2                __vector_10
+ .text.MGIE_VidEnable
+                0x000002f0        0x8 ./MCAL/MGIE/MGIE_Program.o
+                0x000002f0                MGIE_VidEnable
+ .text.MGIE_VidDisable
+                0x000002f8        0x8 ./MCAL/MGIE/MGIE_Program.o
+                0x000002f8                MGIE_VidDisable
+ .text.MDIO_Error_State_SetPinDirection
+                0x00000300      0x100 ./MCAL/MDIO/MDIO_Program.o
+                0x00000300                MDIO_Error_State_SetPinDirection
+ .text.MDIO_Error_State_SetPortDirection
+                0x00000400       0x32 ./MCAL/MDIO/MDIO_Program.o
+                0x00000400                MDIO_Error_State_SetPortDirection
+ .text.MDIO_Error_State_SetPinValue
+                0x00000432      0x100 ./MCAL/MDIO/MDIO_Program.o
+                0x00000432                MDIO_Error_State_SetPinValue
+ .text.MDIO_Error_State_SetPortValue
+                0x00000532       0x28 ./MCAL/MDIO/MDIO_Program.o
+                0x00000532                MDIO_Error_State_SetPortValue
+ .text.MDIO_Error_State_GetPinValue
+                0x0000055a       0x46 ./MCAL/MDIO/MDIO_Program.o
+                0x0000055a                MDIO_Error_State_GetPinValue
+ .text.MDIO_Error_State_SetNippleValue
+                0x000005a0       0x9a ./MCAL/MDIO/MDIO_Program.o
+                0x000005a0                MDIO_Error_State_SetNippleValue
+ .text.HLED_VidLed_Toggle
+                0x0000063a       0x30 ./HAL/HLED/HLED_Program.o
+                0x0000063a                HLED_VidLed_Toggle
+ .text.HLED_VidLed_Off
+                0x0000066a        0xe ./HAL/HLED/HLED_Program.o
+                0x0000066a                HLED_VidLed_Off
+ .text.HLED_VidLed_On
+                0x00000678        0xe ./HAL/HLED/HLED_Program.o
+                0x00000678                HLED_VidLed_On
+ .text.HLED_VidInit
+                0x00000686        0xe ./HAL/HLED/HLED_Program.o
+                0x00000686                HLED_VidInit
+ .text.RUN_DC_MOTOR_FORWARD
+                0x00000694       0x1c ./main.o
+                0x00000694                RUN_DC_MOTOR_FORWARD
+ .text.RUN_DC_MOTOR_BACKWARD
+                0x000006b0       0x1c ./main.o
+                0x000006b0                RUN_DC_MOTOR_BACKWARD
+ .text.main     0x000006cc       0x36 ./main.o
+                0x000006cc                main
+ .text.APP_SSDDEC
+                0x00000702       0x52 ./main.o
+                0x00000702                APP_SSDDEC
+ .text.APP_SSDINC
+                0x00000754       0x50 ./main.o
+                0x00000754                APP_SSDINC
+ .text.APP_ToggleLed3
+                0x000007a4        0xa ./main.o
+                0x000007a4                APP_ToggleLed3
+ .text.APP_ToggleLed2
+                0x000007ae        0xa ./main.o
+                0x000007ae                APP_ToggleLed2
+ .text.APP_ToggleLed1
+                0x000007b8        0xa ./main.o
+                0x000007b8                APP_ToggleLed1
+ .text.libgcc   0x000007c2        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000007c2        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000007c2        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000007c2                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000007c2        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000007c2                exit
+                0x000007c2                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000007c2        0x4 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000007c6                _etext = .
+
+.data           0x00800060       0x12 load address 0x000007c6
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./RTOS_Stack/RTOS_Program.o
+ .data          0x00800060        0x0 ./MCAL/TIMER/TIMER_Program.o
+ .data          0x00800060        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .data          0x00800060        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .data          0x00800060        0x0 ./HAL/HLED/HLED_Program.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.Led1     0x00800060        0x2 ./main.o
+                0x00800060                Led1
+ .data.Led2     0x00800062        0x2 ./main.o
+                0x00800062                Led2
+ .data.Led3     0x00800064        0x2 ./main.o
+                0x00800064                Led3
+ .data.SSD      0x00800066        0xa ./main.o
+                0x00800066                SSD
+ .data.Count1.1340
+                0x00800070        0x1 ./main.o
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800072                . = ALIGN (0x2)
+ *fill*         0x00800071        0x1 00
+                0x00800072                _edata = .
+                0x00800072                PROVIDE (__data_end, .)
+
+.bss            0x00800072       0x1c
+                0x00800072                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800072        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800072        0x0 ./RTOS_Stack/RTOS_Program.o
+ .bss           0x00800072        0x0 ./MCAL/TIMER/TIMER_Program.o
+ .bss           0x00800072        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .bss           0x00800072        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .bss           0x00800072        0x0 ./HAL/HLED/HLED_Program.o
+ .bss           0x00800072        0x0 ./main.o
+ .bss           0x00800072        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800072        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800072        0x0 d:/embedded projects/nti/programes/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.SysTasks  0x00800072       0x16 ./RTOS_Stack/RTOS_Program.o
+                0x00800072                SysTasks
+ .bss.Flag.1254
+                0x00800088        0x1 ./HAL/HLED/HLED_Program.o
+ .bss.CountFrame.1341
+                0x00800089        0x1 ./main.o
+ .bss.CountFrame.1330
+                0x0080008a        0x1 ./main.o
+ .bss.Count.1329
+                0x0080008b        0x1 ./main.o
+ *(COMMON)
+ COMMON         0x0080008c        0x2 ./MCAL/TIMER/TIMER_Program.o
+                0x0080008c                TIMER0_CallBack
+                0x0080008e                PROVIDE (__bss_end, .)
+                0x000007c6                __data_load_start = LOADADDR (.data)
+                0x000007d8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080008e        0x0
+                0x0080008e                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080008e                PROVIDE (__noinit_end, .)
+                0x0080008e                _end = .
+                0x0080008e                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(NTI_MAR_RTOS_Project1.elf elf32-avr)
+LOAD linker stubs
